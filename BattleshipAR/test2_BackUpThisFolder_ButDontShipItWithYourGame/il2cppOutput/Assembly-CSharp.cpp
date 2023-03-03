@@ -7782,6 +7782,8 @@ inline bool Enumerator_MoveNext_mA8A979ABA69619E1F7137A922310D21CCD924EDC (Enume
 {
 	return ((  bool (*) (Enumerator_t115957CEAEDF4C520C93D4E91842BA940981A122*, const RuntimeMethod*))Enumerator_MoveNext_mA8A979ABA69619E1F7137A922310D21CCD924EDC_gshared)(__this, method);
 }
+// System.Void PlaceObjectCube::OnDisable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlaceObjectCube_OnDisable_m26258AF495D2ECEF5876818C2C30647369832763 (PlaceObjectCube_t6678856E2C7AE362825D55F15076DCE5FBA6ECE8* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E (String_t* ___0_sceneName, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Application::Quit()
@@ -9691,7 +9693,7 @@ IL_0009:
 		L_7 = ARRaycastManager_Raycast_mF56A1E2D7CBB61131E4D844ADA9D0CC1F6B53EAC(L_2, L_5, L_6, 1, NULL);
 		if (!L_7)
 		{
-			goto IL_007a;
+			goto IL_0080;
 		}
 	}
 	{
@@ -9760,6 +9762,12 @@ IL_0061_1:
 	}
 
 IL_007a:
+	{
+		// OnDisable();
+		PlaceObjectCube_OnDisable_m26258AF495D2ECEF5876818C2C30647369832763(__this, NULL);
+	}
+
+IL_0080:
 	{
 		// }
 		return;

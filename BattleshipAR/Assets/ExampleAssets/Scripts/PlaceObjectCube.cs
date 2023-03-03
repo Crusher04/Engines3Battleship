@@ -46,6 +46,7 @@ public class PlaceObjectCube : MonoBehaviour
                 Pose pose = hit.pose;
                 GameObject obj = Instantiate(prefab, pose.position, pose.rotation);
             }
+            OnDisable();
         }
     }
 }
