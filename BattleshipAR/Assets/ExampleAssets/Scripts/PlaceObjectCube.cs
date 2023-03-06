@@ -89,7 +89,7 @@ public class PlaceObjectCube : MonoBehaviour
                 if (i == 0)
                 {
                     prefabMain = prefab;
-                    scale = new Vector3(0.2f, 0.1f, 0.2f);
+                    scale = new Vector3(0.2f, 0.02f, 0.2f);
                     
                 }
                 if (i == 1)
