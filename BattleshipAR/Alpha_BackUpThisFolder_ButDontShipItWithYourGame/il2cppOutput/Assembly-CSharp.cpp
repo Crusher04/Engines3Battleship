@@ -404,6 +404,8 @@ struct MainMenu_t5A8A8E4906FD2B24D16567A6BFFDAA6B91DD12DF;
 struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
 // System.Reflection.MemberFilter
 struct MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553;
+// MenuScript
+struct MenuScript_t0A8469779D2B3056BFAF8AFBF83DDA1932A9E17A;
 // UnityEngine.Mesh
 struct Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4;
 // UnityEngine.MeshFilter
@@ -4206,6 +4208,11 @@ struct MainMenu_t5A8A8E4906FD2B24D16567A6BFFDAA6B91DD12DF  : public MonoBehaviou
 {
 };
 
+// MenuScript
+struct MenuScript_t0A8469779D2B3056BFAF8AFBF83DDA1932A9E17A  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
 // TMPro.Examples.ObjectSpin
 struct ObjectSpin_tE4A801A6C63FE0773DE2FD043571CB80CC9F194B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -6497,6 +6504,10 @@ struct AnchorCreator_tBBEE94135B5183E0A8EE52FB00513F69C7C980ED_StaticFields
 // MainMenu
 
 // MainMenu
+
+// MenuScript
+
+// MenuScript
 
 // TMPro.Examples.ObjectSpin
 
@@ -9748,10 +9759,10 @@ IL_003f_1:
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = __this->___prefab_4;
 				__this->___prefabMain_13 = L_12;
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___prefabMain_13), (void*)L_12);
-				// scale = new Vector3(0.2f, 0.02f, 0.2f);
+				// scale = new Vector3(0.3f, 0.02f, 0.3f);
 				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
 				memset((&L_13), 0, sizeof(L_13));
-				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_13), (0.200000003f), (0.0199999996f), (0.200000003f), /*hidden argument*/NULL);
+				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_13), (0.300000012f), (0.0199999996f), (0.300000012f), /*hidden argument*/NULL);
 				__this->___scale_21 = L_13;
 			}
 
@@ -10055,6 +10066,40 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainMenu_Quit_m2B85ACAF7EFBA8E95FAE62830
 }
 // System.Void MainMenu::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainMenu__ctor_m8209CEC1D907C87A96D777961F4D0536E6E948DD (MainMenu_t5A8A8E4906FD2B24D16567A6BFFDAA6B91DD12DF* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void MenuScript::Play()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MenuScript_Play_mDB94DD36EEE1B59CBFC6FD45134034CF4D9D4BDA (MenuScript_t0A8469779D2B3056BFAF8AFBF83DDA1932A9E17A* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6183583C14342FABEAE18DDE6F829848BE9043D1);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// SceneManager.LoadScene("Scene1");
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(_stringLiteral6183583C14342FABEAE18DDE6F829848BE9043D1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void MenuScript::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MenuScript__ctor_mCDAA51C5C929C62E7082872DA581F913C3E66EDC (MenuScript_t0A8469779D2B3056BFAF8AFBF83DDA1932A9E17A* __this, const RuntimeMethod* method) 
 {
 	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
