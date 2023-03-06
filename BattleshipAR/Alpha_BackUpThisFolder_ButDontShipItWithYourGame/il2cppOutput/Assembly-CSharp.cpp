@@ -7782,6 +7782,8 @@ inline ARRaycastHit_tB32B5606815B8A7DF479C00187A852F8D20E3B70 Enumerator_get_Cur
 {
 	return ((  ARRaycastHit_tB32B5606815B8A7DF479C00187A852F8D20E3B70 (*) (Enumerator_t115957CEAEDF4C520C93D4E91842BA940981A122*, const RuntimeMethod*))Enumerator_get_Current_m4C2D1CE7862FE45C2E0CF07B9A925C93B243EB28_gshared_inline)(__this, method);
 }
+// UnityEngine.Vector3 UnityEngine.Vector3::op_Division(UnityEngine.Vector3,System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Transform::set_localScale(UnityEngine.Vector3)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.List`1/Enumerator<UnityEngine.XR.ARFoundation.ARRaycastHit>::MoveNext()
@@ -8416,8 +8418,6 @@ inline TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* Component_GetC
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* TMP_TextInfo_CopyMeshInfoVertexData_mF66E2F8821470E68D95FEB53D456CFA86241C0CA (TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* __this, const RuntimeMethod* method) ;
 // System.Void TMPro.Examples.TMP_TextSelector_B::RestoreCachedVertexAttributes(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_RestoreCachedVertexAttributes_m1FD258EC7A53C8E1ECB18EB6FFEFC6239780C398 (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, int32_t ___0_index, const RuntimeMethod* method) ;
-// UnityEngine.Vector3 UnityEngine.Vector3::op_Division(UnityEngine.Vector3,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
 // System.Void TMPro.TMP_MeshInfo::SwapVertexData(System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_MeshInfo_SwapVertexData_mBB35F36F8E7E6CF1429B26417140570EE94FE718 (TMP_MeshInfo_t320C52212E9D672EBB5F5C18C3E0700AA33DD76B* __this, int32_t ___0_src, int32_t ___1_dst, const RuntimeMethod* method) ;
 // UnityEngine.Color32 TMPro.TMPro_ExtensionMethods::Tint(UnityEngine.Color32,System.Single)
@@ -9703,7 +9703,7 @@ IL_0009:
 		L_7 = ARRaycastManager_Raycast_mF56A1E2D7CBB61131E4D844ADA9D0CC1F6B53EAC(L_2, L_5, L_6, 1, NULL);
 		if (!L_7)
 		{
-			goto IL_0257;
+			goto IL_02c5;
 		}
 	}
 	{
@@ -9718,7 +9718,7 @@ IL_0009:
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_0249:
+FINALLY_02b7:
 			{// begin finally (depth: 1)
 				Enumerator_Dispose_m01EBE6E815AD7850E1AEBE3F74FA5AFA9D2CEBC4((&V_1), Enumerator_Dispose_m01EBE6E815AD7850E1AEBE3F74FA5AFA9D2CEBC4_RuntimeMethod_var);
 				return;
@@ -9727,7 +9727,7 @@ FINALLY_0249:
 		try
 		{// begin try (depth: 1)
 			{
-				goto IL_023b_1;
+				goto IL_02a9_1;
 			}
 
 IL_003f_1:
@@ -9761,7 +9761,7 @@ IL_0075_1:
 				int32_t L_14 = __this->___i_19;
 				if ((!(((uint32_t)L_14) == ((uint32_t)1))))
 				{
-					goto IL_00af_1;
+					goto IL_00c5_1;
 				}
 			}
 			{
@@ -9769,114 +9769,139 @@ IL_0075_1:
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = __this->___prefab1_5;
 				__this->___prefabMain_13 = L_15;
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___prefabMain_13), (void*)L_15);
-				// height = 0.1f;
-				__this->___height_20 = (0.100000001f);
-				// scale = new Vector3(0.0015f, 0.0015f, 0.0015f);
+				// height = -0.012f;
+				__this->___height_20 = (-0.0120000001f);
+				// scale = new Vector3(0.0025f, 0.0025f, 0.0025f);
 				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
 				memset((&L_16), 0, sizeof(L_16));
-				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_16), (0.00150000001f), (0.00150000001f), (0.00150000001f), /*hidden argument*/NULL);
+				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_16), (0.00249999994f), (0.00249999994f), (0.00249999994f), /*hidden argument*/NULL);
 				__this->___scale_21 = L_16;
+				// scale = scale / 2 ;
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = __this->___scale_21;
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
+				L_18 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_17, (2.0f), NULL);
+				__this->___scale_21 = L_18;
 			}
 
-IL_00af_1:
+IL_00c5_1:
 			{
 				// if (i == 2)
-				int32_t L_17 = __this->___i_19;
-				if ((!(((uint32_t)L_17) == ((uint32_t)2))))
+				int32_t L_19 = __this->___i_19;
+				if ((!(((uint32_t)L_19) == ((uint32_t)2))))
 				{
-					goto IL_00e9_1;
+					goto IL_0115_1;
 				}
 			}
 			{
 				// prefabMain = prefab2;
-				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = __this->___prefab2_6;
-				__this->___prefabMain_13 = L_18;
-				Il2CppCodeGenWriteBarrier((void**)(&__this->___prefabMain_13), (void*)L_18);
-				// scale = new Vector3(0.0055f, 0.0055f, 0.0055f);
-				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
-				memset((&L_19), 0, sizeof(L_19));
-				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_19), (0.00549999997f), (0.00549999997f), (0.00549999997f), /*hidden argument*/NULL);
-				__this->___scale_21 = L_19;
-				// height = 0.1f;
-				__this->___height_20 = (0.100000001f);
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = __this->___prefab2_6;
+				__this->___prefabMain_13 = L_20;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___prefabMain_13), (void*)L_20);
+				// scale = new Vector3(0.0045f, 0.0045f, 0.0045f);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
+				memset((&L_21), 0, sizeof(L_21));
+				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_21), (0.00449999981f), (0.00449999981f), (0.00449999981f), /*hidden argument*/NULL);
+				__this->___scale_21 = L_21;
+				// height = -0.018f;
+				__this->___height_20 = (-0.0179999992f);
+				// scale = scale / 2;
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = __this->___scale_21;
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
+				L_23 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_22, (2.0f), NULL);
+				__this->___scale_21 = L_23;
 			}
 
-IL_00e9_1:
+IL_0115_1:
 			{
 				// if (i == 3)
-				int32_t L_20 = __this->___i_19;
-				if ((!(((uint32_t)L_20) == ((uint32_t)3))))
+				int32_t L_24 = __this->___i_19;
+				if ((!(((uint32_t)L_24) == ((uint32_t)3))))
 				{
-					goto IL_0123_1;
+					goto IL_0165_1;
 				}
 			}
 			{
 				// prefabMain = prefab3;
-				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21 = __this->___prefab3_7;
-				__this->___prefabMain_13 = L_21;
-				Il2CppCodeGenWriteBarrier((void**)(&__this->___prefabMain_13), (void*)L_21);
-				// scale = new Vector3(0.0015f, 0.0015f, 0.0015f);
-				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
-				memset((&L_22), 0, sizeof(L_22));
-				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_22), (0.00150000001f), (0.00150000001f), (0.00150000001f), /*hidden argument*/NULL);
-				__this->___scale_21 = L_22;
-				// height = 0.1f;
-				__this->___height_20 = (0.100000001f);
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25 = __this->___prefab3_7;
+				__this->___prefabMain_13 = L_25;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___prefabMain_13), (void*)L_25);
+				// scale = new Vector3(0.0060f, 0.0060f, 0.0060f);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26;
+				memset((&L_26), 0, sizeof(L_26));
+				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_26), (0.00600000005f), (0.00600000005f), (0.00600000005f), /*hidden argument*/NULL);
+				__this->___scale_21 = L_26;
+				// height = -0.02f;
+				__this->___height_20 = (-0.0199999996f);
+				// scale = scale / 2;
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27 = __this->___scale_21;
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28;
+				L_28 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_27, (2.0f), NULL);
+				__this->___scale_21 = L_28;
 			}
 
-IL_0123_1:
+IL_0165_1:
 			{
 				// if (i == 4)
-				int32_t L_23 = __this->___i_19;
-				if ((!(((uint32_t)L_23) == ((uint32_t)4))))
+				int32_t L_29 = __this->___i_19;
+				if ((!(((uint32_t)L_29) == ((uint32_t)4))))
 				{
-					goto IL_015d_1;
+					goto IL_01b5_1;
 				}
 			}
 			{
 				// prefabMain = prefab4;
-				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24 = __this->___prefab4_8;
-				__this->___prefabMain_13 = L_24;
-				Il2CppCodeGenWriteBarrier((void**)(&__this->___prefabMain_13), (void*)L_24);
-				// height = 0.1f;
-				__this->___height_20 = (0.100000001f);
-				// scale = new Vector3(0.0115f, 0.0115f, 0.0115f);
-				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25;
-				memset((&L_25), 0, sizeof(L_25));
-				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_25), (0.0115f), (0.0115f), (0.0115f), /*hidden argument*/NULL);
-				__this->___scale_21 = L_25;
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_30 = __this->___prefab4_8;
+				__this->___prefabMain_13 = L_30;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___prefabMain_13), (void*)L_30);
+				// height = -0.01f;
+				__this->___height_20 = (-0.00999999978f);
+				// scale = new Vector3(0.0035f, 0.0035f, 0.0035f);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31;
+				memset((&L_31), 0, sizeof(L_31));
+				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_31), (0.00350000011f), (0.00350000011f), (0.00350000011f), /*hidden argument*/NULL);
+				__this->___scale_21 = L_31;
+				// scale = scale / 2;
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = __this->___scale_21;
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33;
+				L_33 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_32, (2.0f), NULL);
+				__this->___scale_21 = L_33;
 			}
 
-IL_015d_1:
+IL_01b5_1:
 			{
 				// if (i == 5)
-				int32_t L_26 = __this->___i_19;
-				if ((!(((uint32_t)L_26) == ((uint32_t)5))))
+				int32_t L_34 = __this->___i_19;
+				if ((!(((uint32_t)L_34) == ((uint32_t)5))))
 				{
-					goto IL_0197_1;
+					goto IL_0205_1;
 				}
 			}
 			{
 				// prefabMain = prefab5;
-				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27 = __this->___prefab5_9;
-				__this->___prefabMain_13 = L_27;
-				Il2CppCodeGenWriteBarrier((void**)(&__this->___prefabMain_13), (void*)L_27);
-				// scale = new Vector3(0.0015f, 0.0015f, 0.0015f);
-				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28;
-				memset((&L_28), 0, sizeof(L_28));
-				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_28), (0.00150000001f), (0.00150000001f), (0.00150000001f), /*hidden argument*/NULL);
-				__this->___scale_21 = L_28;
-				// height = 0.1f;
-				__this->___height_20 = (0.100000001f);
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_35 = __this->___prefab5_9;
+				__this->___prefabMain_13 = L_35;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___prefabMain_13), (void*)L_35);
+				// scale = new Vector3(0.0050f, 0.0050f, 0.0050f);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36;
+				memset((&L_36), 0, sizeof(L_36));
+				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_36), (0.00499999989f), (0.00499999989f), (0.00499999989f), /*hidden argument*/NULL);
+				__this->___scale_21 = L_36;
+				// height = -0.018f;
+				__this->___height_20 = (-0.0179999992f);
+				// scale = scale / 2;
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37 = __this->___scale_21;
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38;
+				L_38 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_37, (2.0f), NULL);
+				__this->___scale_21 = L_38;
 			}
 
-IL_0197_1:
+IL_0205_1:
 			{
 				// if (i == 6)
-				int32_t L_29 = __this->___i_19;
-				if ((!(((uint32_t)L_29) == ((uint32_t)6))))
+				int32_t L_39 = __this->___i_19;
+				if ((!(((uint32_t)L_39) == ((uint32_t)6))))
 				{
-					goto IL_01a7_1;
+					goto IL_0215_1;
 				}
 			}
 			{
@@ -9884,67 +9909,67 @@ IL_0197_1:
 				__this->___placed_15 = (bool)1;
 			}
 
-IL_01a7_1:
+IL_0215_1:
 			{
 				// if (placed == false)
-				bool L_30 = __this->___placed_15;
-				if (L_30)
+				bool L_40 = __this->___placed_15;
+				if (L_40)
 				{
-					goto IL_023b_1;
+					goto IL_02a9_1;
 				}
 			}
 			{
 				// pose = hit.pose;
-				Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_31;
-				L_31 = ARRaycastHit_get_pose_m84C13E71E21FE12CBA9AAD98DC28B1E414C9EFFD((&V_2), NULL);
-				__this->___pose_18 = L_31;
+				Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_41;
+				L_41 = ARRaycastHit_get_pose_m84C13E71E21FE12CBA9AAD98DC28B1E414C9EFFD((&V_2), NULL);
+				__this->___pose_18 = L_41;
 				// obj = Instantiate(prefabMain, new Vector3(pose.position.x, pose.position.y + height, pose.position.z), pose.rotation);
-				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = __this->___prefabMain_13;
-				Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_33 = (&__this->___pose_18);
-				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_34 = (&L_33->___position_0);
-				float L_35 = L_34->___x_2;
-				Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_36 = (&__this->___pose_18);
-				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_37 = (&L_36->___position_0);
-				float L_38 = L_37->___y_3;
-				float L_39 = __this->___height_20;
-				Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_40 = (&__this->___pose_18);
-				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_41 = (&L_40->___position_0);
-				float L_42 = L_41->___z_4;
-				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43;
-				memset((&L_43), 0, sizeof(L_43));
-				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_43), L_35, ((float)il2cpp_codegen_add(L_38, L_39)), L_42, /*hidden argument*/NULL);
-				Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_44 = (&__this->___pose_18);
-				Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_45 = L_44->___rotation_1;
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_42 = __this->___prefabMain_13;
+				Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_43 = (&__this->___pose_18);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_44 = (&L_43->___position_0);
+				float L_45 = L_44->___x_2;
+				Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_46 = (&__this->___pose_18);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_47 = (&L_46->___position_0);
+				float L_48 = L_47->___y_3;
+				float L_49 = __this->___height_20;
+				Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_50 = (&__this->___pose_18);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_51 = (&L_50->___position_0);
+				float L_52 = L_51->___z_4;
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53;
+				memset((&L_53), 0, sizeof(L_53));
+				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_53), L_45, ((float)il2cpp_codegen_add(L_48, L_49)), L_52, /*hidden argument*/NULL);
+				Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* L_54 = (&__this->___pose_18);
+				Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_55 = L_54->___rotation_1;
 				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_46;
-				L_46 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_32, L_43, L_45, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
-				__this->___obj_17 = L_46;
-				Il2CppCodeGenWriteBarrier((void**)(&__this->___obj_17), (void*)L_46);
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_56;
+				L_56 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_42, L_53, L_55, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
+				__this->___obj_17 = L_56;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___obj_17), (void*)L_56);
 				// obj.transform.localScale = scale;
-				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_47 = __this->___obj_17;
-				NullCheck(L_47);
-				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_48;
-				L_48 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_47, NULL);
-				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_49 = __this->___scale_21;
-				NullCheck(L_48);
-				Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_48, L_49, NULL);
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_57 = __this->___obj_17;
+				NullCheck(L_57);
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_58;
+				L_58 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_57, NULL);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59 = __this->___scale_21;
+				NullCheck(L_58);
+				Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_58, L_59, NULL);
 				// i++;
-				int32_t L_50 = __this->___i_19;
-				__this->___i_19 = ((int32_t)il2cpp_codegen_add(L_50, 1));
+				int32_t L_60 = __this->___i_19;
+				__this->___i_19 = ((int32_t)il2cpp_codegen_add(L_60, 1));
 			}
 
-IL_023b_1:
+IL_02a9_1:
 			{
 				// foreach (ARRaycastHit hit in hits)
-				bool L_51;
-				L_51 = Enumerator_MoveNext_mA8A979ABA69619E1F7137A922310D21CCD924EDC((&V_1), Enumerator_MoveNext_mA8A979ABA69619E1F7137A922310D21CCD924EDC_RuntimeMethod_var);
-				if (L_51)
+				bool L_61;
+				L_61 = Enumerator_MoveNext_mA8A979ABA69619E1F7137A922310D21CCD924EDC((&V_1), Enumerator_MoveNext_mA8A979ABA69619E1F7137A922310D21CCD924EDC_RuntimeMethod_var);
+				if (L_61)
 				{
 					goto IL_003f_1;
 				}
 			}
 			{
-				goto IL_0257;
+				goto IL_02c5;
 			}
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
@@ -9953,7 +9978,7 @@ IL_023b_1:
 		}
 	}
 
-IL_0257:
+IL_02c5:
 	{
 		// }
 		return;
@@ -24850,6 +24875,33 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Finger_get_index_mB409A9B
 		return L_0;
 	}
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x_2;
+		float L_2 = ___1_d;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___0_a;
+		float L_4 = L_3.___y_3;
+		float L_5 = ___1_d;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___0_a;
+		float L_7 = L_6.___z_4;
+		float L_8 = ___1_d;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		memset((&L_9), 0, sizeof(L_9));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_9), ((float)(L_1/L_2)), ((float)(L_4/L_5)), ((float)(L_7/L_8)), /*hidden argument*/NULL);
+		V_0 = L_9;
+		goto IL_0021;
+	}
+
+IL_0021:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = V_0;
+		return L_10;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -25492,33 +25544,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector4__ctor_m96B2CD8B862B2
 		float L_3 = ___3_w;
 		__this->___w_4 = L_3;
 		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
-{
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
-		float L_1 = L_0.___x_2;
-		float L_2 = ___1_d;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___0_a;
-		float L_4 = L_3.___y_3;
-		float L_5 = ___1_d;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___0_a;
-		float L_7 = L_6.___z_4;
-		float L_8 = ___1_d;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
-		memset((&L_9), 0, sizeof(L_9));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_9), ((float)(L_1/L_2)), ((float)(L_4/L_5)), ((float)(L_7/L_8)), /*hidden argument*/NULL);
-		V_0 = L_9;
-		goto IL_0021;
-	}
-
-IL_0021:
-	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = V_0;
-		return L_10;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_PingPong_mB1D6A10F386CE1EEA99DB69486DDA6DA531D799D_inline (float ___0_t, float ___1_length, const RuntimeMethod* method) 
