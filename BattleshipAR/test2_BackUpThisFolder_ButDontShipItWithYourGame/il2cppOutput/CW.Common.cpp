@@ -1613,7 +1613,7 @@ struct Scene_tA1DC762B79745EB5140F054C884855B922318356
 struct ShaderTagId_t453E2085B5EE9448FF75E550CAB111EFF690ECB0 
 {
 	// System.Int32 UnityEngine.Rendering.ShaderTagId::m_Id
-	int32_t ___m_Id_0;
+	int32_t ___m_Id_1;
 };
 
 // System.Single
@@ -14034,7 +14034,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_3 = ___0_texture;
 		NullCheck(L_3);
 		int32_t L_4;
-		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_3);
+		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_3);
 		___3_width = L_4;
 	}
 
@@ -14052,7 +14052,7 @@ IL_0017:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_6 = ___0_texture;
 		NullCheck(L_6);
 		int32_t L_7;
-		L_7 = VirtualFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_6);
+		L_7 = VirtualFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_6);
 		___4_height = L_7;
 	}
 

@@ -89,38 +89,43 @@ public class PlaceObjectCube : MonoBehaviour
                 if (i == 0)
                 {
                     prefabMain = prefab;
-                    scale = new Vector3(0.2f, 0.02f, 0.2f);
-                    
+                    scale = new Vector3(0.3f, 0.02f, 0.3f);
+                    height = -0.5f;
                 }
                 if (i == 1)
                 {
                     prefabMain = prefab1;
-                    height = 0.1f;
-                    scale = new Vector3(0.0015f, 0.0015f, 0.0015f);
+                    height = 0;
+                    scale = new Vector3(0.0025f, 0.0025f, 0.0025f);
+                    scale = scale / 2;
                 }
                 if (i == 2)
                 {
                     prefabMain = prefab2;
-                    scale = new Vector3(0.0055f, 0.0055f, 0.0055f);
-                    height = 0.1f;   
+                    scale = new Vector3(0.0045f, 0.0045f, 0.0045f);
+                    height = 0;
+                    scale = scale / 2;
                 }
                 if (i == 3)
                 {
                     prefabMain = prefab3;
-                    scale = new Vector3(0.0015f, 0.0015f, 0.0015f);
-                    height = 0.1f;
+                    scale = new Vector3(0.0060f, 0.0060f, 0.0060f);
+                    height = 0;
+                    scale = scale / 2;
                 }
                 if (i == 4)
                 {
                     prefabMain = prefab4;
-                    height = 0.1f;
-                    scale = new Vector3(0.0115f, 0.0115f, 0.0115f);
+                    height = 0;
+                    scale = new Vector3(0.0040f, 0.0040f, 0.0040f);
+                    scale = scale / 2;
                 }
                 if (i == 5)
                 {
                     prefabMain = prefab5;
-                    scale = new Vector3(0.0015f, 0.0015f, 0.0015f);
-                    height = 0.1f;
+                    scale = new Vector3(0.0050f, 0.0050f, 0.0050f);
+                    height = 0;
+                    scale = scale / 2;
                 }
                 if (i == 6)
                 {
@@ -132,20 +137,19 @@ public class PlaceObjectCube : MonoBehaviour
                 }
 
                
+       
+       
+
 
                 if (placed == false)
                 {
                     pose = hit.pose;
                     obj = Instantiate(prefabMain, new Vector3(pose.position.x, pose.position.y + height, pose.position.z), pose.rotation);
                     obj.transform.localScale = scale;
-       
+
                     i++;
-                 
+
                 }
-                
-
-
-
                
 
             }
