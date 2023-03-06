@@ -57,6 +57,7 @@ public class PlaceObjectCube : MonoBehaviour
                         {
                             pose = hit.pose;
                             obj = Instantiate(prefab, new Vector3(pose.position.x, pose.position.y, pose.position.z), pose.rotation);
+                            obj.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
                             objectSpawned = true;
                             placed = true;
                         }
