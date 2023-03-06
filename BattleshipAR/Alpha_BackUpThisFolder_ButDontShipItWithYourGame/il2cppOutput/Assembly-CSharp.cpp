@@ -9748,10 +9748,10 @@ IL_003f_1:
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = __this->___prefab_4;
 				__this->___prefabMain_13 = L_12;
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___prefabMain_13), (void*)L_12);
-				// scale = new Vector3(0.2f, 0.1f, 0.2f);
+				// scale = new Vector3(0.2f, 0.02f, 0.2f);
 				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
 				memset((&L_13), 0, sizeof(L_13));
-				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_13), (0.200000003f), (0.100000001f), (0.200000003f), /*hidden argument*/NULL);
+				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_13), (0.200000003f), (0.0199999996f), (0.200000003f), /*hidden argument*/NULL);
 				__this->___scale_21 = L_13;
 			}
 
