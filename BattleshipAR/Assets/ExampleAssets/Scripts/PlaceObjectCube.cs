@@ -95,36 +95,51 @@ public class PlaceObjectCube : MonoBehaviour
                 if (i == 1)
                 {
                     prefabMain = prefab1;
-                    height = 0;
+
+
+                    height = -0.012f;
                     scale = new Vector3(0.0025f, 0.0025f, 0.0025f);
-                    scale = scale / 2;
+                    scale = scale / 2 ;
+
                 }
                 if (i == 2)
                 {
                     prefabMain = prefab2;
                     scale = new Vector3(0.0045f, 0.0045f, 0.0045f);
-                    height = 0;
-                    scale = scale / 2;
+
+
+                    height = -0.018f;
+                    scale = scale / 2; 
+                    
+
                 }
                 if (i == 3)
                 {
                     prefabMain = prefab3;
                     scale = new Vector3(0.0060f, 0.0060f, 0.0060f);
-                    height = 0;
-                    scale = scale / 2;
+
+
+                    height = -0.02f;
+                    scale = scale / 2; 
+
                 }
                 if (i == 4)
                 {
                     prefabMain = prefab4;
-                    height = 0;
-                    scale = new Vector3(0.0040f, 0.0040f, 0.0040f);
-                    scale = scale / 2;
+
+
+                    height = -0.01f;
+                    scale = new Vector3(0.0035f, 0.0035f, 0.0035f);
+                    scale = scale / 2; 
+
                 }
                 if (i == 5)
                 {
                     prefabMain = prefab5;
                     scale = new Vector3(0.0050f, 0.0050f, 0.0050f);
-                    height = 0;
+
+                    height = -0.018f;
+
                     scale = scale / 2;
                 }
                 if (i == 6)
