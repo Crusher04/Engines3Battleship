@@ -75,7 +75,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 95
+  controlID: 115
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 52
+  controlID: 17
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 53
+  controlID: 18
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 600}
   m_MaxSize: {x: 600, y: 1200}
   m_TitleContent:
-    m_Text: Tutorials
+    m_Text: WindowTitle
     m_Image: {fileID: 0}
     m_Tooltip: 
   m_Pos:
@@ -403,22 +403,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/ExampleAssets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/ExampleAssets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\bro_a\OneDrive\Documents\GitHub\Engines3Battleship\BattleshipAR
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: a4650000
-    m_LastClickedID: 26020
-    m_ExpandedIDs: 00000000a4650000a8650000aa650000ac650000ae6500005a6700006a67000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 60}
+    m_SelectedIDs: a4740000
+    m_LastClickedID: 29860
+    m_ExpandedIDs: 0000000076740000787400007a7400007c7400007e74000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -446,7 +446,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a4650000a6650000a8650000aa650000ac650000ae650000
+    m_ExpandedIDs: 0000000076740000787400007a7400007c7400007e740000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -578,21 +578,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5a33ffff1e34ffff3634ffffca42ffff8e43ffffa643ffff7a58ffff3e59ffff5659ffff446effff086fffff3072ffff0476ffffc876fffff079ffff5a82ffff1e83ffff3683ffff7cc1ffff40c2ffff18c5ffff70effffff4f4ffff2efbffff90670000d2b8000020b9000058bb0000a6bb0000acbd0000dabd0000eebd000028be000078c00000c6c00000
+      m_ExpandedIDs: 28fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Quit Button
-        m_OriginalName: Quit Button
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 49226
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -861,9 +861,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1311.2236, y: 505.55923, z: 596.2775}
+    m_Target: {x: 1423.9125, y: 664.41235, z: 634.14185}
     speed: 2
-    m_Value: {x: 1311.2236, y: 505.55923, z: 596.2775}
+    m_Value: {x: 1423.9125, y: 664.41235, z: 634.14185}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -910,13 +910,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.09959903, y: -0.054546513, z: -0.010116526, w: 0.99361116}
+    m_Target: {x: 0.05889104, y: -0.024167316, z: -0.014090349, w: 0.9980033}
     speed: 2
-    m_Value: {x: 0.09960111, y: -0.056029562, z: -0.009965816, w: 0.99339867}
+    m_Value: {x: -0.05889104, y: 0.024167316, z: 0.014090348, w: -0.99800324}
   m_Size:
-    m_Target: 738.95667
+    m_Target: 995.47723
     speed: 2
-    m_Value: 773.7766
+    m_Value: 995.47723
   m_Ortho:
     m_Target: 0
     speed: 2

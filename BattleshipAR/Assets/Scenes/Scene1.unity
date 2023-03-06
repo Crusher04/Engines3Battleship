@@ -1824,12 +1824,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1659859597}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b094286ecaece74bbbfb4acd5592aa3, type: 3}
+  m_Script: {fileID: 11500000, guid: f25e7e77e848a6943b0f99d05412728d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 3679621484863753213, guid: 66cf690b534f4cd4abcb9d26c8c26771, type: 3}
+  prefab1: {fileID: 1813258765252098, guid: aea52f5da97018c4aaecffcdfa9035d8, type: 3}
+  prefab2: {fileID: 1307028158353980, guid: 09419625ea90e2f478b96ae476784b2c, type: 3}
+  prefab3: {fileID: 1042197431107668, guid: ec5d6bc6e2d4942448a8b3d9eddf3865, type: 3}
+  prefab4: {fileID: 1257255175192470, guid: c3672f9b2e0555e418f7dcc46c6d0d10, type: 3}
+  prefab5: {fileID: 1171684472522874, guid: 74d0740f4abc7e54fab50d33af2582da, type: 3}
+  script: {fileID: 0}
   placed: 0
-  objectSpawned: 0
 --- !u!1 &1918191012
 GameObject:
   m_ObjectHideFlags: 0
