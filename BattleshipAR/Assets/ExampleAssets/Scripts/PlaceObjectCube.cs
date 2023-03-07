@@ -31,30 +31,14 @@ public class PlaceObjectCube : MonoBehaviour
 
     private GameObject prefabMain;
     [SerializeField]
-
     public MainMenu script;
-
     public bool placed;
-
-
     private Vector3 rotationSpeed = new Vector3(5, 5, 5);
-
-
     private GameObject obj;
-
-
     private Pose pose;
-    
-
-
-
     private int i;
     private float height = -0.0025f;
     Vector3 scale = new Vector3(1, 1, 1);
-
-    // Start is called before the first frame update
-
-    
 
     private void Awake()
     {
@@ -109,8 +93,7 @@ public class PlaceObjectCube : MonoBehaviour
 
 
                     height = -0.018f;
-                    scale = scale / 2; 
-                    
+                    scale = scale / 2;  
 
                 }
                 if (i == 3)
@@ -151,11 +134,6 @@ public class PlaceObjectCube : MonoBehaviour
 
                 }
 
-               
-       
-       
-
-
                 if (placed == false)
                 {
                     pose = hit.pose;
@@ -172,15 +150,4 @@ public class PlaceObjectCube : MonoBehaviour
         }
        
     }
-
-
-   /* public void Rotate()
-    {
-        Debug.Log("Rotate Called");
-        obj.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-        
-
-    }
-*/
-
 }
